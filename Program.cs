@@ -36,6 +36,47 @@ if (int.TryParse(s, out i))
     }
 }
 
+int seguir = 1;
+while (seguir == 1)
+{
+    Console.WriteLine("---Menu---");
+    Console.WriteLine("1.Sumar");
+    Console.WriteLine("2.Restar");
+    Console.WriteLine("3.Multiplicar");
+    Console.WriteLine("4.Dividir");
+    Console.WriteLine("Ingrese la opcion: ");
+    int opcion = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Ingrese los numeros: ");
+    int x = Convert.ToInt32(Console.ReadLine());
+    int z = Convert.ToInt32(Console.ReadLine());
+    switch (opcion)
+    {
+        case 1:
+            Console.WriteLine($"{x} + {z} = {x + z}");
+            break;
+        case 2:
+            Console.WriteLine($"{x} - {z} = {x - z}");
+            break;
+        case 3:
+            Console.WriteLine($"{x} * {z} = {x * z}");
+            break;
+        case 4:
+            Console.WriteLine($"{x} / {z} = {x / z}");
+            break;
 
+        default:
+            break;
+    }
+    Console.WriteLine("Seguir usando calculadora?");
+    Console.WriteLine("1.si");
+    Console.WriteLine("2.no");
+    Console.WriteLine("Respuesta: ");
+    seguir = Convert.ToInt32(Console.ReadLine());
+    if (seguir != 1)
+    {
+        Console.WriteLine("Gracias por usar la calculadora, Hasta Luego");
+    }
+
+}
 
 
