@@ -16,11 +16,11 @@ En C#, las secuencias de escape se utilizan para representar caracteres especial
 
 ## ¿Qué sucede cuando utiliza el carácter @ y $ antes de una cadena de texto?
 
-- El carácter @
+- El carácter @  
 El carácter @ se usa para crear cadenas textuales literales (verbos), donde las secuencias de escape no se procesan. También permite el uso de comillas dobles dentro de la cadena sin necesidad de escapar de ellas.
 
-- El carácter $
+- El carácter $  
 El carácter $ se usa para crear cadenas interpoladas, donde puedes insertar expresiones dentro de la cadena usando llaves {}. Esto permite una manera más conveniente de combinar texto y valores de variables.
 
-- Combinación de @ y $
+- Combinación de @ y $  
 Puedes combinar @ y $ para crear cadenas interpoladas literales. Esto permite tanto la interpolación de variables como la inclusión de texto literal sin necesidad de secuencias de escape.
